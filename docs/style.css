@@ -1,0 +1,321 @@
+/* ============================================================
+   Excel Quest — style.css
+   Game-themed dark color scheme
+   ============================================================ */
+
+/* --- CSS Variables --- */
+:root {
+  --bg-primary: #0d1117;
+  --bg-secondary: #161b22;
+  --bg-card: #1c2230;
+  --color-gold: #f0c040;
+  --color-gold-hover: #ffe066;
+  --color-text: #e6edf3;
+  --color-text-muted: #8b949e;
+  --color-border: #30363d;
+
+  /* Category badge colors */
+  --cat-formulas: #1f6feb;
+  --cat-data-cleaning: #238636;
+  --cat-pivot-tables: #9a3fcf;
+  --cat-automation: #db6d28;
+  --cat-data-analysis: #1a7f74;
+  --cat-advanced: #b62324;
+
+  /* Difficulty badge colors */
+  --diff-apprentice: #238636;
+  --diff-journeyman: #1f6feb;
+  --diff-master: #8957e5;
+
+  --radius: 8px;
+  --transition: 0.2s ease;
+}
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-gold);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-gold-hover);
+  text-decoration: underline;
+}
+
+/* --- Hero --- */
+.hero {
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #1c2230 100%);
+  border-bottom: 2px solid var(--color-gold);
+  text-align: center;
+  padding: 80px 20px 60px;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  color: var(--color-gold);
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+}
+
+.hero .tagline {
+  font-size: clamp(1.1rem, 3vw, 1.6rem);
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.hero .hero-sub {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  margin-bottom: 28px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: var(--color-gold);
+  color: #0d1117;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.btn-primary:hover {
+  background: var(--color-gold-hover);
+  color: #0d1117;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+/* --- Main Sections --- */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: var(--color-gold);
+  margin-bottom: 24px;
+}
+
+/* --- Filter Bar --- */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.filter-btn {
+  background: var(--bg-card);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.filter-btn:hover {
+  background: var(--bg-secondary);
+  color: var(--color-text);
+  border-color: var(--color-gold);
+}
+
+.filter-btn.active {
+  background: var(--color-gold);
+  color: #0d1117;
+  border-color: var(--color-gold);
+  font-weight: 700;
+}
+
+/* --- Challenge Grid --- */
+.challenge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* --- Challenge Card --- */
+.challenge-card {
+  background: var(--bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+
+.challenge-card:hover {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 18px rgba(240, 192, 64, 0.25);
+  transform: translateY(-3px);
+}
+
+.challenge-card.hidden {
+  display: none;
+}
+
+.card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.challenge-card h3 {
+  font-size: 1.1rem;
+  color: var(--color-text);
+}
+
+.challenge-card p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  flex: 1;
+}
+
+.btn-card {
+  display: inline-block;
+  background: transparent;
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
+  border-radius: var(--radius);
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  transition: background var(--transition), color var(--transition);
+  margin-top: auto;
+}
+
+.btn-card:hover {
+  background: var(--color-gold);
+  color: #0d1117;
+  text-decoration: none;
+}
+
+/* --- Badges --- */
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+  color: #fff;
+}
+
+/* Category badge colors */
+.category-formulas      { background-color: var(--cat-formulas); }
+.category-data-cleaning { background-color: var(--cat-data-cleaning); }
+.category-pivot-tables  { background-color: var(--cat-pivot-tables); }
+.category-automation    { background-color: var(--cat-automation); }
+.category-data-analysis { background-color: var(--cat-data-analysis); }
+.category-advanced      { background-color: var(--cat-advanced); }
+
+/* Difficulty badge colors */
+.difficulty-apprentice { background-color: var(--diff-apprentice); }
+.difficulty-journeyman { background-color: var(--diff-journeyman); }
+.difficulty-master     { background-color: var(--diff-master); }
+
+/* --- Learning Paths Section --- */
+.paths-section {
+  margin-top: 60px;
+}
+
+.paths-intro {
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+}
+
+.paths-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.path-card {
+  background: var(--bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.path-card:hover {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 14px rgba(240, 192, 64, 0.2);
+}
+
+.path-card h3 {
+  font-size: 1.1rem;
+  color: var(--color-gold);
+}
+
+.path-card p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.path-card ol {
+  padding-left: 20px;
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+.path-card ol li {
+  margin-bottom: 4px;
+}
+
+/* --- Footer --- */
+footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+  padding: 24px 20px;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin-bottom: 6px;
+}
+
+footer a {
+  color: var(--color-gold);
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  .hero {
+    padding: 50px 16px 40px;
+  }
+
+  .filter-btn {
+    font-size: 0.8rem;
+    padding: 6px 14px;
+  }
+}

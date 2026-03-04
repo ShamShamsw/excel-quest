@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excel Quest — Level Up Your Spreadsheet Skills</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>🎮 Excel Quest</h1>
+      <p class="tagline">Level Up Your Spreadsheet Skills</p>
+      <p class="hero-sub">A gamified, challenge-based learning platform for Microsoft Excel.</p>
+      <a class="btn-primary" href="https://github.com/ShamShamsw/excel-quest" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+  </header>
+
+  <!-- CHALLENGES -->
+  <main>
+    <section class="challenges-section">
+      <h2>⚔️ Challenges</h2>
+
+      <!-- FILTER BUTTONS -->
+      <div class="filter-bar" role="group" aria-label="Filter challenges by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="formulas">📐 Formulas</button>
+        <button class="filter-btn" data-filter="data-cleaning">🧹 Data Cleaning</button>
+        <button class="filter-btn" data-filter="pivot-tables">📊 Pivot Tables</button>
+        <button class="filter-btn" data-filter="automation">🤖 Automation</button>
+        <button class="filter-btn" data-filter="data-analysis">📈 Data Analysis</button>
+        <button class="filter-btn" data-filter="advanced">⚡ Advanced</button>
+      </div>
+
+      <!-- CHALLENGE GRID -->
+      <div class="challenge-grid" id="challengeGrid">
+
+        <div class="challenge-card" data-category="formulas">
+          <div class="card-badges">
+            <span class="badge category-formulas">📐 Formulas</span>
+            <span class="badge difficulty-apprentice">🟢 Apprentice</span>
+          </div>
+          <h3>VLOOKUP Treasure Hunt</h3>
+          <p>You're a pirate with a treasure map — a messy spreadsheet. Match chest IDs to their contents using VLOOKUP to find the buried gold.</p>
+          <a class="btn-card" href="https://github.com/ShamShamsw/excel-quest/tree/main/challenges/formulas/vlookup-treasure-hunt" target="_blank" rel="noopener">Start Challenge →</a>
+        </div>
+
+        <div class="challenge-card" data-category="formulas">
+          <div class="card-badges">
+            <span class="badge category-formulas">📐 Formulas</span>
+            <span class="badge difficulty-journeyman">🔵 Journeyman</span>
+          </div>
+          <h3>INDEX-MATCH Maze</h3>
+          <p>You're trapped in a data labyrinth. Only INDEX-MATCH can help you look left, right, and escape.</p>
+          <a class="btn-card" href="https://github.com/ShamShamsw/excel-quest/tree/main/challenges/formulas/index-match-maze" target="_blank" rel="noopener">Start Challenge →</a>
+        </div>
+
+        <div class="challenge-card" data-category="data-cleaning">
+          <div class="card-badges">
+            <span class="badge category-data-cleaning">🧹 Data Cleaning</span>
+            <span class="badge difficulty-apprentice">🟢 Apprentice</span>
+          </div>
+          <h3>Duplicate Detective</h3>
+          <p>The city's crime database is full of duplicate case files. As the detective, you must find and eliminate them.</p>
+          <a class="btn-card" href="https://github.com/ShamShamsw/excel-quest/tree/main/challenges/data-cleaning/duplicate-detective" target="_blank" rel="noopener">Start Challenge →</a>
+        </div>
+
+        <div class="challenge-card" data-category="pivot-tables">
+          <div class="card-badges">
+            <span class="badge category-pivot-tables">📊 Pivot Tables</span>
+            <span class="badge difficulty-journeyman">🔵 Journeyman</span>
+          </div>
+          <h3>Pivot Pyramid</h3>
+          <p>Ancient architects need sales data summarized to build the perfect pyramid. Each level requires a different aggregation.</p>
+          <a class="btn-card" href="https://github.com/ShamShamsw/excel-quest/tree/main/challenges/pivot-tables/pivot-pyramid" target="_blank" rel="noopener">Start Challenge →</a>
+        </div>
+
+        <div class="challenge-card" data-category="automation">
+          <div class="card-badges">
+            <span class="badge category-automation">🤖 Automation</span>
+            <span class="badge difficulty-master">🟣 Master</span>
+          </div>
+          <h3>Macro Mission</h3>
+          <p>You're a secret agent. The enemy updates a report every day. Automate the formatting and summary with a Macro to complete your mission.</p>
+          <a class="btn-card" href="https://github.com/ShamShamsw/excel-quest/tree/main/challenges/automation/macro-mission" target="_blank" rel="noopener">Start Challenge →</a>
+        </div>
+
+        <div class="challenge-card" data-category="data-analysis">
+          <div class="card-badges">
+            <span class="badge category-data-analysis">📈 Data Analysis</span>
+            <span class="badge difficulty-journeyman">🔵 Journeyman</span>
+          </div>
+          <h3>Dashboard Duel</h3>
+          <p>Two rival analysts have been challenged to build the best Excel dashboard from the same dataset. Show your skills.</p>
+          <a class="btn-card" href="https://github.com/ShamShamsw/excel-quest/tree/main/challenges/data-analysis/dashboard-duel" target="_blank" rel="noopener">Start Challenge →</a>
+        </div>
+
+        <div class="challenge-card" data-category="advanced">
+          <div class="card-badges">
+            <span class="badge category-advanced">⚡ Advanced</span>
+            <span class="badge difficulty-master">🟣 Master</span>
+          </div>
+          <h3>Power Query Quest</h3>
+          <p>An epic quest across three kingdoms (three messy data sources). Unite them with Power Query to forge the ultimate dataset.</p>
+          <a class="btn-card" href="https://github.com/ShamShamsw/excel-quest/tree/main/challenges/advanced/power-query-quest" target="_blank" rel="noopener">Start Challenge →</a>
+        </div>
+
+      </div><!-- /.challenge-grid -->
+    </section>
+
+    <!-- LEARNING PATHS -->
+    <section class="paths-section">
+      <h2>🗺️ Learning Paths</h2>
+      <p class="paths-intro">Not sure where to start? Follow a curated path designed for your goals.</p>
+      <div class="paths-grid">
+        <div class="path-card">
+          <h3>🌱 Beginner Path</h3>
+          <p>Start from zero and build confidence with three carefully chosen challenges.</p>
+          <ol>
+            <li>Duplicate Detective</li>
+            <li>VLOOKUP Treasure Hunt</li>
+            <li>Pivot Pyramid</li>
+          </ol>
+          <a class="btn-card" href="https://github.com/ShamShamsw/excel-quest/blob/main/learning-paths/beginner-path.md" target="_blank" rel="noopener">View Path →</a>
+        </div>
+        <div class="path-card">
+          <h3>📊 Data Analyst Path</h3>
+          <p>Build the core Excel skills every data analyst needs.</p>
+          <ol>
+            <li>Duplicate Detective</li>
+            <li>VLOOKUP Treasure Hunt</li>
+            <li>INDEX-MATCH Maze</li>
+            <li>Pivot Pyramid</li>
+            <li>Dashboard Duel</li>
+          </ol>
+          <a class="btn-card" href="https://github.com/ShamShamsw/excel-quest/blob/main/learning-paths/data-analyst-path.md" target="_blank" rel="noopener">View Path →</a>
+        </div>
+        <div class="path-card">
+          <h3>🤖 Automation Path</h3>
+          <p>Master formulas and macros to automate repetitive Excel tasks.</p>
+          <ol>
+            <li>VLOOKUP Treasure Hunt</li>
+            <li>INDEX-MATCH Maze</li>
+            <li>Macro Mission</li>
+            <li>Power Query Quest</li>
+          </ol>
+          <a class="btn-card" href="https://github.com/ShamShamsw/excel-quest/blob/main/learning-paths/automation-path.md" target="_blank" rel="noopener">View Path →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>🎮 Excel Quest — MIT License &copy; 2026 <a href="https://github.com/ShamShamsw" target="_blank" rel="noopener">ShamShamsw</a></p>
+    <p><a href="https://github.com/ShamShamsw/excel-quest/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contribute a Challenge</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
