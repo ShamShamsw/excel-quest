@@ -60,6 +60,14 @@ Not sure where to start? Follow a curated path:
 
 ---
 
+## ⌨️ Keyboard Shortcuts
+
+Speed up your Excel workflow with our comprehensive shortcuts reference:
+
+- ⌨️ [**Excel Keyboard Shortcuts**](shortcuts/excel-keyboard-shortcuts.md) — Copy, paste, navigation, formatting, formulas, and more
+
+---
+
 ## 🌐 Static Site
 
 The `docs/` folder contains a game-themed static website ready to be enabled as a GitHub Pages site. Enable it from the repository **Settings → Pages → Source: `docs/` folder**.
