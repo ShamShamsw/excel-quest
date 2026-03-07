@@ -1,86 +1,69 @@
-# 🎮 Excel Quest — Level Up Your Spreadsheet Skills
+# Excel Quest — Challenge-based Excel practice
 
-[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-> A gamified, challenge-based learning platform for Microsoft Excel. Pick a challenge, follow a learning path, and level up your spreadsheet skills — one quest at a time.
-
----
-
-## 🕹️ How to Play
-
-Excel Quest is organized into **challenge folders**, each containing:
-
-1. A **README** with the story, mission, hints, and success criteria
-2. A **`solution.ipynb`** Jupyter Notebook with step-by-step walkthrough
-3. A **`challenge.xlsx`** starter file (see each challenge folder for instructions)
-
-Each challenge has a **difficulty rating**:
-- 🟢 **Apprentice** — Great for beginners
-- 🔵 **Journeyman** — Intermediate skills required
-- 🟣 **Master** — Advanced Excel knowledge needed
+Excel Quest is a collection of small, hands-on Excel challenges and learning paths designed to help you practice formulas, data cleaning, pivot tables, automation, and more.
 
 ---
 
-## 🚀 Getting Started
+## Announcement
 
-**Option 1 — Browse on GitHub:**  
-Navigate any challenge folder and read the `README.md` to get started immediately.
+We're excited to note that this repository now includes references and example guidance for using Claude (by Anthropic) in automation and AI-augmented walkthroughs. These resources are informational — follow Anthropic's documentation and terms when using Claude.
 
-**Option 2 — Clone and use Jupyter Notebooks locally:**
+
+## What you'll find
+
+- Challenge folders (each has a `README.md` and a `solution.ipynb` with a walkthrough)
+- Curated learning paths in `learning-paths/`
+- A small static site in `docs/` suitable for GitHub Pages
+- A concise shortcuts reference in `shortcuts/`
+
+---
+
+## Quick start
+
+1. Browse challenges directly on GitHub: open any folder under `challenges/` and read its `README.md`.
+2. To work locally, clone this repository and open the notebooks with Jupyter or VS Code:
+
 ```bash
-git clone https://github.com/ShamShamsw/excel-quest.git
+git clone <repository-url>
 cd excel-quest
-pip install jupyter openpyxl pandas
+# (optional) create a virtualenv, then
+pip install jupyter pandas openpyxl
 jupyter notebook
 ```
 
----
-
-## 📂 Challenge Categories
-
-| Category | Description | Challenges |
-|----------|-------------|------------|
-| 📐 [Formulas](challenges/formulas/) | VLOOKUP, INDEX-MATCH, and formula mastery | 2 |
-| 🧹 [Data Cleaning](challenges/data-cleaning/) | Tidy up messy, duplicate-filled datasets | 1 |
-| 📊 [Pivot Tables](challenges/pivot-tables/) | Summarize and slice data like a pro | 1 |
-| 🤖 [Automation](challenges/automation/) | Macros, VBA, and workflow automation | 1 |
-| 📈 [Data Analysis](challenges/data-analysis/) | Dashboards, charts, and insights | 1 |
-| ⚡ [Advanced](challenges/advanced/) | Power Query, Power Pivot, and beyond | 1 |
+Notebooks are primarily used for walkthroughs and explanations. Many challenges are solvable in Microsoft Excel without running the notebooks.
 
 ---
 
-## 🗺️ Learning Paths
+## Repository layout
 
-Not sure where to start? Follow a curated path:
-
-- 🌱 [**Beginner Path**](learning-paths/beginner-path.md) — Start from zero and build confidence
-- 📊 [**Data Analyst Path**](learning-paths/data-analyst-path.md) — Skills for aspiring data analysts
-- 🤖 [**Automation Path**](learning-paths/automation-path.md) — Automate repetitive Excel tasks
-
----
-
-## ⌨️ Keyboard Shortcuts
-
-Speed up your Excel workflow with our comprehensive shortcuts reference:
-
-- ⌨️ [**Excel Keyboard Shortcuts**](shortcuts/excel-keyboard-shortcuts.md) — Copy, paste, navigation, formatting, formulas, and more
-
----
-
-## 🌐 Static Site
-
-The `docs/` folder contains a game-themed static website ready to be enabled as a GitHub Pages site. Enable it from the repository **Settings → Pages → Source: `docs/` folder**.
+- `challenges/` — challenge categories and individual challenge folders (each contains `README.md` and `solution.ipynb`)
+	- `formulas/` — `index-match-maze`, `vlookup-treasure-hunt`
+	- `data-cleaning/` — `duplicate-detective`
+	- `pivot-tables/` — `pivot-pyramid`
+	- `automation/` — `macro-mission`
+	- `data-analysis/` — `dashboard-duel`
+	- `advanced/` — `power-query-quest`
+- `learning-paths/` — curated paths and guides
+- `docs/` — static website files (can be used for GitHub Pages)
+- `shortcuts/` — `excel-keyboard-shortcuts.md`
+- `CONTRIBUTING.md` — contribution guidelines
+- `LICENSE` — project license
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
-We welcome new challenges! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to propose and submit new challenges.
+Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding new challenges or improving existing content.
 
 ---
 
-## 📜 License
+## License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.  
-Original author: **ShamShamsw** (2026)
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+---
+
+If you want, I can also add a short troubleshooting or development section (how to run the `docs/` site locally). Let me know.
