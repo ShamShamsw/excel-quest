@@ -4,6 +4,30 @@
 (function () {
   'use strict';
 
+  // --- Announcement dismiss ---
+  const banner = document.getElementById('announcementBanner');
+  const dismissBtn = document.getElementById('announcementDismiss');
+
+  if (banner && dismissBtn) {
+    try {
+      if (localStorage.getItem('claude-announcement-dismissed') === '1') {
+        banner.classList.add('hidden');
+      }
+    } catch (e) {
+      console.warn('localStorage unavailable:', e);
+    }
+
+    dismissBtn.addEventListener('click', function () {
+      banner.classList.add('hidden');
+      try {
+        localStorage.setItem('claude-announcement-dismissed', '1');
+      } catch (e) {
+        console.warn('localStorage unavailable:', e);
+      }
+    });
+  }
+
+  // --- Challenge filter ---
   const filterButtons = document.querySelectorAll('.filter-btn');
   const challengeCards = document.querySelectorAll('.challenge-card');
 
